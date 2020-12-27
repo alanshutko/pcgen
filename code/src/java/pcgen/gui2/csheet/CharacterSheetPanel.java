@@ -65,6 +65,7 @@ public final class CharacterSheetPanel extends JFXPanel implements CharacterSele
             browser = new WebView();
             previewVariableHandler = new PreviewVariablesHandler();
             browser.setContextMenuEnabled(true);
+            browser.setFontScale(1.75);
             browser.getEngine().setJavaScriptEnabled(true);
             browser.getEngine().documentProperty().addListener(previewVariableHandler);
             this.setScene(new Scene(browser));
